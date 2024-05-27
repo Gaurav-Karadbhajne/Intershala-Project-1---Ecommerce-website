@@ -1,0 +1,68 @@
+
+
+/* Custom CSS for Footer */
+    .footer {
+    background-color: #0b0d0f;
+    color: white;
+    /* Center footer vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.footer-content {
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+.row{
+    
+    text-align: center;
+}
+
+
+/* Custom CSS */
+.cover-image {
+    position: relative;
+    background-image: url('/Images/Cover\ Image.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here */
+}
+
+.logo {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+    z-index: 1; /* Ensure logo appears above overlay */
+}
+
+.slogan {
+    font-size: 35px;
+    color: #fff;
+    margin-top: -60px; /* Adjusted margin */
+    z-index: 1; /* Ensure slogan appears above overlay */
+}

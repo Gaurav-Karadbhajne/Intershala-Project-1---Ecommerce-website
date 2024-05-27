@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoping Cart</title>
+    <script data-require="jquery@3.1.1" data-semver="3.1.1"
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/CSS/cart.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header will be dynamically injected here -->
+    <div id="header"></div>
+    <br><br><br><br><br>
+
+
+    <div class="wrapper">
+        <h1>Shopping Cart</h1>
+        <div class="project">
+            <div class="shop">
+                <!-- 1nd Cart Product-->
+                <div class="box">
+                    <img src="/Images/Mens Pants/Black Pant.jpg">
+                    <div class="content">
+                        <h5>Black pant</h5>
+                        <h5>Price: $10</h5>
+                         <!-- Quantity input with plus and minus buttons -->
+                        <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max
+                            name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern
+                            inputmode><input type="button" value="+" class="plus">
+                        </div>
+                         <!-- Remove button -->
+                        <p class="btn-area"><i aria-hidden="true" class="fa fa-trash"></i> 
+                            <span class="btn2">Remove</span></p>
+                    </div>
+                </div>
+                <!-- 2nd Cart Product-->
+                <div class="box">
+                    <img src="/Images/Mens Shirts/Black Printed Shirt.jpg">
+                    <div class="content">
+                        <h5>Black Printed Shirt</h5>
+                        <h5>Price: $11</h5>
+                         <!-- Quantity input with plus and minus buttons -->
+                        <div class="quantity buttons_added">
+                            <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max
+                                name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern
+                                inputmode><input type="button" value="+" class="plus">
+                            </div>
+                         
+                            <!-- Remove button -->
+                        <p class="btn-area"><i aria-hidden="true" class="fa fa-trash"></i> <span
+                                class="btn2">Remove</span></p>
+                    </div>
+                </div>
+               <!-- Right side bar showing subtotal, tax, shipping, and total -->
+            </div>
+            <div class="right-bar">
+                <p><span>Subtotal</span> <span>$21</span></p>
+                <hr>
+                <p><span>Tax</span> <span>$3</span></p>
+                <hr>
+                <p><span>Shipping</span> <span>$5</span></p>
+                <hr>
+                <p><span>Total</span> <span>$29</span></p><a href="#"><i class="fa fa-shopping-cart"></i>Checkout</a>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br><br><br>
+
+    <!-- Footer will be dynamically injected here -->
+    <div id="footer"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="/js/Script.js"></script>
+    <script src="/js/cart.js"></script>
+</body>
+
+</html>

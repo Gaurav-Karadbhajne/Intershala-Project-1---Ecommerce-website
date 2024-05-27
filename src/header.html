@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Custom CSS */
+        .navbar-light .navbar-nav .nav-link {
+            color: #160e0e;
+        }
+        .navbar-light .navbar-toggler {
+            border-color: #6c757d;
+        }
+        .navbar-light .navbar-nav .nav-link:hover {
+            color: #007bff;
+        }
+        .navbar-light .navbar-nav .dropdown-menu {
+            background-color: #f8f9fa;
+        }
+        .navbar-light .navbar-nav .dropdown-item:hover {
+            background-color: #e9ecef;
+        }
+        .navbar-brand img {
+            width: 50px;
+        }
+      
+     
+        /* Center search box */
+        @media (min-width: 992px) {
+            .navbar .navbar-nav {
+                flex-direction: row !important;
+                align-items: center;
+            }
+            .navbar .navbar-nav .nav-item {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        /* Move toggler to align with logo on mobile */
+        @media (max-width: 991px) {
+            .navbar-brand, .navbar-toggler {
+                margin-right: auto !important;
+            }
+            .navbar-toggler{
+                margin-left: 60%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+<header>
+<!-- First Part of Header -->
+<nav class="navbar navbar-expand-md navbar-light bg-dark">
+    <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+            <img src="/Images/logo.png" alt="Logo" style="max-width: 100px;">
+        </a>
+        <!-- Second Toggler for Navigation Bar -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Search Box -->
+        <div>
+            <form class="form-inline">
+                <input class="form-control mr-sm-0" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary my-0 my-sm-0"  type="submit">Search</button>
+            </form>
+        </div>
+        <!-- Login and Cart Buttons -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="/src/Login.html">
+                <button class="btn btn-outline-secondary mr-2">Login</button>
+            </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/src/cart.html">
+                    <i class="fa fa-shopping-cart" style="font-size: 24px; color: #007bff;"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Second Part of Header (Navigation Bar) -->
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container">
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/src/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/src/AllProduct.html">All Products</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownWomen" role="button" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      Women
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownWomen">
+                        <a class="dropdown-item" href="/src/W_AllProduct.html">All Product</a>
+                      <a class="dropdown-item" href="/src/Dress.html">Dresses</a>
+                      <a class="dropdown-item" href="/src/Pants_w.html">Pants</a>
+                      <a class="dropdown-item" href="/src/Skirts.html">Skirts</a>
+                    </div>
+                  </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="menDropdown" data-toggle="dropdown">Men</a>
+                    <div class="dropdown-menu" aria-labelledby="menDropdown">
+                        <a class="dropdown-item" href="/src/M_AllProduct.html">All products</a>
+                        <a class="dropdown-item" href="/src/M_Shirts.html">Shirts</a>
+                        <a class="dropdown-item" href="/src/M_Pants.html">Pants</a>
+                        <a class="dropdown-item" href="/src/M_Hoddie.html">Hoodies</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/src/kids.html">Kids</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/src/Contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+
+
+
+
+
+
+
+<!-- Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    // Initialize Bootstrap dropdown
+    $(document).ready(function(){
+      $('.dropdown-toggle').dropdown();
+    });
+  </script>
+  
+
+</body>
+</html>
